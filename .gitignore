@@ -3,10 +3,5 @@
 
 # unignore files we want to track
 !.gitignore
-!*.html
-!*.css
-!*.jpg
-!*.png
-!*.gif
-!*.ico
+!*.py
 !*.md
