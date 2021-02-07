@@ -11,7 +11,7 @@ if USER_CHOICE == "1":
     try:
         USER_FAH_TEMP = float(USER_FAH_TEMP)
         CELSIUS = (5.0/9.0)*((USER_FAH_TEMP)-32.0)
-        print("{:.1f}" .format(USER_FAH_TEMP), 'F =', "{:.1f}" .format(CELSIUS), 'C',)
+        print("{:.1f}" .format(USER_FAH_TEMP), 'F = ', "{:.1f}" .format(CELSIUS), 'C', sep="")
     except:
         print("That is an invalid tempature.")
 elif USER_CHOICE == "2":
@@ -19,7 +19,7 @@ elif USER_CHOICE == "2":
     try:
         USER_CEL_TEMP = float(USER_CEL_TEMP)
         FAHRENHEIT = ((9.0/5.0)*float(USER_CEL_TEMP)+32.0)
-        print("{:.1f}" .format(USER_CEL_TEMP), 'C =', "{:.1f}" .format(FAHRENHEIT), 'F',)
+        print("{:.1f}" .format(USER_CEL_TEMP), 'C = ', "{:.1f}" .format(FAHRENHEIT), 'F', sep="")
     except:
         print("That is an invalid tempature.")
 else:
