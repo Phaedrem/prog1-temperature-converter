@@ -21,6 +21,6 @@ elif USER_CHOICE == "2":
         FAHRENHEIT = ((9.0/5.0)*float(USER_CEL_TEMP)+32.0)
         print("{:.1f}" .format(USER_CEL_TEMP), 'C =', FAHRENHEIT, 'F',)
     except:
-        print("That is an ivalid tempature.")
+        print("That is an invalid tempature.")
 else:
     print("That is an invalid choice.")
