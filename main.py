@@ -5,4 +5,5 @@
 ######################
 
 USER_CHOICE = input("Enter \n 1) Convert Fahrenheit to Celsius \n 2) Convert Celsius to Fahrenheit \n")
-print("Is", USER_CHOICE, "your final answer?")
+if USER_CHOICE == "1":
+    USER_FAH_TEMP=input("Enter a Fahrenheit tempature:")
