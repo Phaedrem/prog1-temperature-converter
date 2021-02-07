@@ -18,7 +18,7 @@ elif USER_CHOICE == "2":
     USER_CEL_TEMP = input("Enter a Celsius tempature: ")
     try:
         USER_CEL_TEMP = float(USER_CEL_TEMP)
-        FAHRENHEIT = ((9.0/5.0)*float(USER_CEL_TEMP)+32.0)
+        FAHRENHEIT = ((9.0/5.0)*(USER_CEL_TEMP)+32.0)
         print("{:.1f}" .format(USER_CEL_TEMP), 'C = ', "{:.1f}" .format(FAHRENHEIT), 'F', sep="")
     except:
         print("That is an invalid tempature.")
