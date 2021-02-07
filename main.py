@@ -13,7 +13,7 @@ if USER_CHOICE == "1":
         CELSIUS = (5.0/9.0)*((USER_FAH_TEMP)-32.0)
         print("{:.1f}" .format(USER_FAH_TEMP), 'F =', CELSIUS, 'C',)
     except:
-        print("That is an ivalid tempature.")
+        print("That is an invalid tempature.")
 elif USER_CHOICE == "2":
     USER_CEL_TEMP = input("Enter a Celsius tempature: ")
     try:
