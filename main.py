@@ -6,4 +6,6 @@
 
 USER_CHOICE = input("Enter \n 1) Convert Fahrenheit to Celsius \n 2) Convert Celsius to Fahrenheit \n")
 if USER_CHOICE == "1":
-    USER_FAH_TEMP=input("Enter a Fahrenheit tempature:")
+    USER_FAH_TEMP = input("Enter a Fahrenheit tempature: ")
+elif USER_CHOICE == "2":
+    USER_CEL_TEMP = input("Enter a Celsius tempature: ")
