@@ -9,3 +9,6 @@ if USER_CHOICE == "1":
     USER_FAH_TEMP = input("Enter a Fahrenheit tempature: ")
 elif USER_CHOICE == "2":
     USER_CEL_TEMP = input("Enter a Celsius tempature: ")
+else:
+    print("That is an invalid choice.")
+
