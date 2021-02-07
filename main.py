@@ -4,11 +4,13 @@
 # Purpose: In this assignment we ask the user for multiple inputs, and make a decision and calculations based on that input.
 ######################
 
+
 USER_CHOICE = input("Enter \n 1) Convert Fahrenheit to Celsius \n 2) Convert Celsius to Fahrenheit \n")
 if USER_CHOICE == "1":
-    USER_FAH_TEMP = input("Enter a Fahrenheit tempature: ")
+    USER_FAH_TEMP = float(input("Enter a Fahrenheit tempature: "))
+    CELSIUS = (5.0/9.0)*((USER_FAH_TEMP)-32.0)
+    print("{:.1f}" .format(USER_FAH_TEMP), 'F =', CELSIUS, 'C',)
 elif USER_CHOICE == "2":
     USER_CEL_TEMP = input("Enter a Celsius tempature: ")
 else:
     print("That is an invalid choice.")
-
