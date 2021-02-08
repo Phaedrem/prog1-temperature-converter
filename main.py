@@ -7,7 +7,7 @@
 
 user_choice = input("Enter \n 1) Convert Fahrenheit to Celsius \n 2) Convert Celsius to Fahrenheit \n")
 if user_choice == "1":
-    user_fah_temp = (input("Enter a Fahrenheit tempature: "))
+    user_fah_temp = (input("Enter a Fahrenheit temperature: "))
     try:
         user_fah_temp = float(user_fah_temp)
         if user_fah_temp >= -459.67:
@@ -16,9 +16,9 @@ if user_choice == "1":
         else:
             print("Sorry, that is not possible.")
     except:
-        print("That is an invalid tempature.")
+        print("That is an invalid temperature.")
 elif user_choice == "2":
-    user_cel_temp = input("Enter a Celsius tempature: ")
+    user_cel_temp = input("Enter a Celsius temperature: ")
     try:
         user_cel_temp = float(user_cel_temp)
         if user_cel_temp >= -273.15:
@@ -27,6 +27,6 @@ elif user_choice == "2":
         else:
             print("Sorry, that is not possible.")
     except:
-        print("That is an invalid tempature.")
+        print("That is an invalid temperature.")
 else:
     print("That is an invalid choice.")
