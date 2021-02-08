@@ -21,8 +21,11 @@ elif user_choice == "2":
     user_cel_temp = input("Enter a Celsius tempature: ")
     try:
         user_cel_temp = float(user_cel_temp)
-        fahrenheit = ((9.0/5.0)*(user_cel_temp)+32.0)
-        print("{:.1f}" .format(user_cel_temp), 'C = ', "{:.1f}" .format(fahrenheit), 'F', sep="")
+        if user_cel_temp >= -273.15:
+            fahrenheit = ((9.0/5.0)*(user_cel_temp)+32.0)
+            print("{:.1f}" .format(user_cel_temp), 'C = ', "{:.1f}" .format(fahrenheit), 'F', sep="")
+        else:
+            print("Sorry, that is not possible.")
     except:
         print("That is an invalid tempature.")
 else:
