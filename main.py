@@ -5,21 +5,21 @@
 ######################
 
 
-USER_CHOICE = input("Enter \n 1) Convert Fahrenheit to Celsius \n 2) Convert Celsius to Fahrenheit \n")
-if USER_CHOICE == "1":
-    USER_FAH_TEMP = (input("Enter a Fahrenheit tempature: "))
+user_choice = input("Enter \n 1) Convert Fahrenheit to Celsius \n 2) Convert Celsius to Fahrenheit \n")
+if user_choice == "1":
+    user_fah_temp = (input("Enter a Fahrenheit tempature: "))
     try:
-        USER_FAH_TEMP = float(USER_FAH_TEMP)
-        CELSIUS = (5.0/9.0)*((USER_FAH_TEMP)-32.0)
-        print("{:.1f}" .format(USER_FAH_TEMP), 'F = ', "{:.1f}" .format(CELSIUS), 'C', sep="")
+        user_fah_temp = float(user_fah_temp)
+        celsius = (5.0/9.0)*((user_fah_temp)-32.0)
+        print("{:.1f}" .format(user_fah_temp), 'F = ', "{:.1f}" .format(celsius), 'C', sep="")
     except:
         print("That is an invalid tempature.")
-elif USER_CHOICE == "2":
-    USER_CEL_TEMP = input("Enter a Celsius tempature: ")
+elif user_choice == "2":
+    user_cel_temp = input("Enter a Celsius tempature: ")
     try:
-        USER_CEL_TEMP = float(USER_CEL_TEMP)
-        FAHRENHEIT = ((9.0/5.0)*(USER_CEL_TEMP)+32.0)
-        print("{:.1f}" .format(USER_CEL_TEMP), 'C = ', "{:.1f}" .format(FAHRENHEIT), 'F', sep="")
+        user_cel_temp = float(user_cel_temp)
+        fahrenheit = ((9.0/5.0)*(user_cel_temp)+32.0)
+        print("{:.1f}" .format(user_cel_temp), 'C = ', "{:.1f}" .format(fahrenheit), 'F', sep="")
     except:
         print("That is an invalid tempature.")
 else:
